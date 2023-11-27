@@ -50,15 +50,6 @@ def train_model(model, optimizer, data_o, data_s, data_a, train_loader, val_load
     
     
     
-    #k_means = round(random.uniform(0.5, 0.6), 2)
-    #k_meanst = round(random.uniform(0.5, 0.6), 2)
-    #k_hmeans = round(random.uniform(0.5, 0.6), 2)
-    
-    #k_means=0.50
-    #k_meanst=0.52
-    #k_hmeans=0.50
-    
-    
     for epoch in range(args.epochs):
         #stoping=0
         t = time.time()
@@ -147,9 +138,7 @@ def train_model(model, optimizer, data_o, data_s, data_a, train_loader, val_load
                 stoping=0
             else:
                 stoping=stoping+1
-            MRR_val-=k_means
-            Hits3_val-=k_meanst
-            Hits10_val-=k_hmeans
+            
             print('epoch: {:04d}'.format(epoch + 1),
                   'loss_train: {:.4f}'.format(loss_train.item()),
                   'auroc_train: {:.4f}'.format(acc),
