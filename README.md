@@ -26,7 +26,7 @@ python drugfeature_fromMG.py
 python 5timesrun.py
 ```
 
-## Dataset
+## Datasets
 
 Deng    |    Ryu    |    FB15K-237    |    WN18RR
 
